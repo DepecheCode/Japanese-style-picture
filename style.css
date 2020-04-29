@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #414345, #232526);
+}
+
+h1 {
+    margin-top: 2vh;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+span {
+    color: #fd1d1d;
+}
+
+.picture {
+    position: relative;
+    overflow: hidden;
+    margin: 2vh auto 2vh;
+    width: 160vh;
+    height: 90vh;
+    background-color: rgb(169, 221, 255);
+    animation: night 30s linear infinite;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+}
+
+img[alt="1"] {
+    top: 10%;
+    left: 0;
+}
+
+img[alt="2"] {
+    top: 25%;
+    left: 0;
+}
+
+img[alt="3"] {
+    top: 32%;
+    left: 0;
+}
+
+img[alt="4"] {
+    top: 35%;
+}
+
+img[alt="5"] {
+    top: 45%;
+    left: 0;
+}
+
+
+img[alt="6"] {
+    top: 65%;
+    left: 0;
+}
+
+img[alt="7"] {
+    top: 5%;
+    left: 5%;
+    width: 15vh;
+    height: 15vh;
+}
+
+img[alt="8"] {
+    top: 11%;
+    left: -35%;
+    width: 50vh;
+    height: 5vh;
+    animation: fromLeftToRight 40s linear infinite;
+}
+
+img[alt="9"] {
+    top: 4%;
+    left: 115%;
+    width: 80vh;
+    height: 12vh;
+    animation: fromRightToLeft 30s linear infinite;
+}
+
+img[alt="10"] {
+    top: 13%;
+    width: 70vh;
+    height: 45vh;
+    right: -2%;
+    transform-origin: 100% 0;
+    animation: moveBranch 9s linear infinite;
+}
+
+img[alt="11"] {
+    width: 12vh;
+    height: 28vh;
+    top: 55%;
+    left: 7%;
+}
+
+
+@keyframes night {
+
+    50% {
+        background-color: #232526;
+    }
+}
+
+@keyframes fromLeftToRight {
+
+    100% {
+        left: 115%;
+    }
+}
+
+@keyframes fromRightToLeft {
+
+    100% {
+        left: -50%;
+    }
+}
+
+@keyframes moveBranch {
+
+    50% {
+        transform: rotate(4deg);
+    }
+}
